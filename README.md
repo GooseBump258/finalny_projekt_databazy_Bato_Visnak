@@ -44,3 +44,6 @@ Surové dáta sú usporiadané v relačnom modeli, ktorý je znázornený na ent
 
 
 
+
+
+
