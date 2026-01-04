@@ -45,6 +45,10 @@ Surové dáta sú usporiadané v relačnom modeli, ktorý je znázornený na ent
 
 <p align="center"><em>Obrázok 1 Entitno-relačná schéma Google Keywords</em></p>
 
+#### Očíslovanie krajín
+Z dôvodu číselných označení krajín vo vybranej databáze sme vytvorili csv súbor obsahujúci číselný kód každej krajiny, je potrebne ho nahrať pre plnú funkčnosť 
+
+
 
 
 
