@@ -59,7 +59,7 @@ V ukážke máme navrhnutú schému hviezdy podľa Kimballovej metodológie.Obsa
 Štruktúra hviezdicového modelu je znázornená na diagrame nižšie.
 
 <p align="center">
-  <img src="images/googlekeywordstabulka.png" alt="ERD diagram" width="250">
+  <img src="images/hviezda_schema_google_keywords.png" alt="ERD diagram" width="250">
 </p>
 
 <p align="center"><em>Obrázok 2 Schéma hviezdy pre Google keywords</em></p>
