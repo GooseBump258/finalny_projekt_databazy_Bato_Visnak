@@ -64,10 +64,37 @@ V ukážke máme navrhnutú schému hviezdy podľa Kimballovej metodológie.Obsa
 
 <p align="center"><em>Obrázok 2 Schéma hviezdy pre Google keywords</em></p>
 
+---
 
+# 3. ELT proces v Snowflake
+## ELT proces pozostáva z troch hlavných krokov:
+ELT = Extract – Load – Transform
+Extract (Extrahovanie)
+Získavanie dát zo zdrojov:
+- databázy
+- API
+- CSV / Excel súbory
+- logy, webové dáta
 
+Dáta sa nečistia ani neupravujú
+Cieľ: dostať dáta von zo zdroja
 
-```
+## Load (Načítanie)
+Dáta sa v surovom stave ukladajú do:
+- Data Warehouse
+- Data Lake
+- Bez transformácií
+- Rýchle nahratie veľkých objemov dát
+
+## Transform (Transformácia)
+Prebieha už v cieľovom systéme
+Úpravy dát:
+- čistenie (NULL hodnoty, duplicity)
+- typy dát
+- agregácie
+- tvorba fact a dimension tabuliek (star schema)
+- Typicky pomocou SQL
+
 
 
 
