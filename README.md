@@ -119,6 +119,10 @@ Daný kód nám vytvorí view s názvom test a selectne všetky údaje z GOOGLE 
 
 # 3.3 Transformácia dát
 V tejto časti sme raw tabuľku upravili a vylepšili o naše pridania, tieto vylepšenia zaručili jednoduchšiu prácu s dátami a následne prehľadnejšie vizualizovanie datasetu.
+Následné tabuľky sa robili podľa 7 existujúcich SCD typov:
+
+** 0 – bez zmien, 1 – prepísanie bez histórie, 2 – nový riadok s históriou, 3 – uložená len predošlá hodnota.
+4 – história v samostatnej tabuľke, 5 – kombinácia 1+4, 6 – kombinácia 1+2+3, 7 – dualný pohľad (aktuálny + historický). **
 
 
 
