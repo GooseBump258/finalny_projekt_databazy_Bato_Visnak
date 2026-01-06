@@ -179,6 +179,26 @@ WHERE keyword IS NOT NULL;
 ## 3.7 Faktová tabuľka
 
 ```SQL
+CREATE OR REPLACE TABLE fact_keywords AS
+SELECT 
+    dd.date_id,
+    dc.country_id,
+    dk.keyword_id,
+    t.platform,
+    t.referral_type,
+    t.site,
+    t.is_branded_keyword,
+    t.is_question,
+    t.calibrated_users,
+    t.calibrated_clicks
+FROM test t
+LEFT JOIN dim_date dd 
+    ON t.date = dd.date
+LEFT JOIN dim_country dc 
+    ON t.country = dc.country_id
+LEFT JOIN dim_keyword dk 
+    ON t.keyword = dk.keyword 
+    AND t.clean_landingpage = dk.clean_landingpage;
 
 ```
 
