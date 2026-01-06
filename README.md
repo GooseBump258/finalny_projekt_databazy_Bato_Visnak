@@ -176,11 +176,40 @@ WHERE keyword IS NOT NULL;
 
 ```
 
+## 3.7 Faktová tabuľka
+
+```SQL
+
+```
+
 ---
 # 4. Vizualizácia dát 
 Na vizualizáciu dát použijeme sekciu Dashboard v snowflake, vytvorili sme základné vizualizačné prvky slúžiace na rýchle pochopenie a využívanie dát z nášho vybranáho datasetu.
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+AUTORI: Samuel Baťo, Matúš Višňák
+---
 
 
 
