@@ -208,7 +208,11 @@ LEFT JOIN dim_keyword dk
 ---
 # 4. Vizualizácia dát 
 Na vizualizáciu dát použijeme sekciu Dashboard v snowflake, vytvorili sme základné vizualizačné prvky slúžiace na rýchle pochopenie a využívanie dát z nášho vybranáho datasetu.
+<p align="center">
+  <img src="images/grafy.png" alt="ERD diagram" width="780">
+</p>
 
+<p align="center"><em>Obrázok 4 Dashboard datasetu Google keywords</em></p>
 
 
 
