@@ -213,9 +213,11 @@ Na vizualizáciu dát použijeme sekciu Dashboard v snowflake, vytvorili sme zá
 </p>
 
 <p align="center"><em>Obrázok 4 Dashboard datasetu Google keywords</em></p>
----
 
+
+---
 ## Graf 1: Počet vyhľadávaní slova youtube na svete za každý deň v mesiaci jún v roku 2022
+
 
 ```SQL
 SELECT
@@ -235,6 +237,7 @@ GROUP BY
 ORDER BY
     dd.date;
 ```
+Kód slúži na vytvorenie grafu ktorý vizualizuje počet vyhľadávaní slova youtube a vyhľadávania obsahujúce "youtube" (pre príklad youtube.com) za každý jeden deň v mesiaci jún v roku 2022
 ---
 
 
@@ -255,6 +258,7 @@ ORDER BY SPOLU_UZIVATELOV DESC
 LIMIT 10;
 
 ```
+Kód slúži na vytvorenie grafu ktorý vizualizuje top 10 najvyhľadávanejších otázok v USA, slúži pre príklad na politické predikcie v období volieb alebo marketingové účely
 
 ---
 
@@ -277,6 +281,7 @@ ORDER BY SPOLU_UZIVATELOV DESC
 LIMIT 25;
 
 ```
+Kód slúži na vytvorenie grafu ktorý vizualizuje 25 najvyhľadávanejších výrazov na Slovensku za mesiac jún 2022 a slúži taktiež na marketingové účely a analýzu internetového správania slovákov
 
 ---
 
@@ -310,6 +315,7 @@ WHERE rn = 1
 ORDER BY den;
 
 ```
+Kód slúži na vytvorenie grafu ktorý vizualizuje najvyhľadávanejší výraz za každý jeden deň separátne
 ---
 
 ## Graf 5: Počet užívateľov pre okolité štáty v mesiaci jún v roku 2022
@@ -328,6 +334,7 @@ GROUP BY dc.country_name
 ORDER BY pocet_uzivatelov DESC;
 
 ```
+Kód slúži na vytvorenie grafu ktorý vizualizuje počet užívateľov tým pádom analýzu užívania internetu a search enginov na počet obyvateľov v iných geopolitických miestach
 
 ---
 ## Graf 6: 10 krajín s najväčším počtom vyhľadávaní podľa počtu užívateľov
@@ -343,6 +350,7 @@ ORDER BY SPOLU_UZIVATELOV DESC
 LIMIT 10;
 
 ```
+Kód slúži na vytvorenie grafu ktorý vizualizuje 10 krajín na svete kde ľudia najviac vyhľadávajú skrz google search engine
 
 
 
@@ -350,7 +358,7 @@ LIMIT 10;
 
 ---
 AUTORI: Samuel Baťo, Matúš Višňák
----
+
 
 
 
