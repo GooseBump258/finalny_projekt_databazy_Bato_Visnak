@@ -98,4 +98,23 @@ SELECT
     t.platform,
     t.referral_type,
     t.site,
-... (14 lines left)
+    t.is_branded_keyword,
+    t.is_question,
+    t.calibrated_users,
+    t.calibrated_clicks,
+
+    -- KUMULATÍVNY POČET KLIKNUTÍ PRE KEYWORD A KRAJINU V ČASE
+    SUM(t.calibrated_clicks) OVER (
+        PARTITION BY dc.country_id, dk.keyword_id
+        ORDER BY dd.date_id
+        ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+    ) AS cumulative_clicks
+
+FROM test t
+LEFT JOIN dim_date dd 
+    ON t.date = dd.date
+LEFT JOIN dim_country dc 
+    ON t.country = dc.country_id
+LEFT JOIN dim_keyword dk 
+    ON t.keyword = dk.keyword 
+    AND t.clean_landingpage = dk.clean_landingpage;
